@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>菜鸟教程(runoob.com)</title>
+	<script src="../jquery/jquery.min-1.10.2.js"></script>
+</head>
+
+<body>
+
+	<div>
+		<h2> AJAX 可以修改文本内容</h2>
+	</div>
+	<button>修改内容</button>
+
+</body>
+<script>
+	$(document).ready(function () {
+		$("button").click(function () {
+			$.ajax({
+				url: "demo_ajax_load.txt",
+				async: true,
+				success: function (result) {
+					$("div").html(result);
+					$('button').hide();
+				}, error(xhr, status, err) {
+					console.log(status, err); //xhr.statusText ==> Not Found
+				}
+			});
+		});
+	});
+</script>
+
+</html>

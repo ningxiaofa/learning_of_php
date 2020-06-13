@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>test ajax - with JavaScript</title>
+	<script type="text/javascript" src="./request.js"></script>
+</head>
+
+<body>
+	<div id='app'>
+		hello world...
+	</div>
+	<script type="text/javascript">
+		(function () {
+			// console.log('start to run...');//just test to run
+			const url = '../serve.php';
+			const method = 'get';
+			const async = true;
+			const timeout = 1000;
+			const data = { test: 1, aaa: 2 }; //对象
+			ajax({
+				url: url,
+				method: method,
+				async: async,
+				timeout: timeout,
+				data: data
+			}).then(
+				// res => console.log('请求成功: ' + res),
+				res => successCallBack((res),
+					// err => console.log('请求失败: ' + err)
+					err => failCallBack(err)
+				));
+
+			function successCallBack(res) {
+				const dom = document.getElementById('app');
+				res = JSON.parse(res);  //api返回的json数据是字符串, 但是需要转换为JS对象,方可进行属性读写值操作.
+				dom.innerHTML = resJoin(res);
+			}
+
+			function resJoin(res) {
+				let str = '';//需要初始换赋值为空字符串，否则拼接时为undefined
+				for (let key in res) {
+					if (!res.hasOwnProperty(key)) {
+						continue;
+					};
+					if (typeof res[key] == 'object') {
+						str += '<span style="color:red">' + key + '：' + JSON.stringify(res[key]) + '</span><br/>';
+					} else {
+						str += '<span style="color:green">' + key + '：' + res[key] + '</span><br/>';
+					}
+
+				}
+				return str;
+			}
+
+			function failCallBack(err) {
+				console.log('请求失败: ' + err);
+			}
+		})();
+	</script>
+</body>
+
+</html>

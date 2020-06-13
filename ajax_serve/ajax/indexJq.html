@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>test ajax - with jquery</title>
+	<script src="../jquery/jquery-3.5.1.min.js"></script>
+	<script src="../ajax/request_jq.js"></script>
+</head>
+
+<body>
+	<div>
+		hello world...
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			req_jq();
+			console.log('rea_jq after');//会先执行 因为是ajax请求是异步任务,这里是同步任务
+		});
+	</script>
+</body>
+
+</html>
