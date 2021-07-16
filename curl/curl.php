@@ -8,12 +8,12 @@
 // echo file_get_contents( "http://git.oschina.net/yunluo/API/raw/master/notice.txt" ); 
 
 
-//echo file_get_contents( "http://ningxiaofa.top/index.php" );  //必须带上http [个人博客, 并没有使用https] 直接显示的是ningxiaofa.top/blog的首页, 但是url并没有变
+//echo file_get_contents( "http://ningxiaofa.top/index.php" );  // 必须带上http [个人博客, 并没有使用https] 直接显示的是ningxiaofa.top/blog的首页, 但是url并没有变
 //exit;
 
 /** 
 检测 curl扩展是否打开,  避免报错.
-因为curl是php的扩展，有的主机为了安全会金庸curl的，
+因为curl是php的扩展，有的主机为了安全会禁用curl的，
 另外php本地调试的时候也是关闭curl的，所以会发生报错.
  */
 if(!function_exists('curl_init')){
