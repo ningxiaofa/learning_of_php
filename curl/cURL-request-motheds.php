@@ -2,7 +2,7 @@
 
 /** 
 检测 curl扩展是否打开,  避免报错.
-因为curl是php的扩展，有的主机为了安全会金庸curl的，
+因为curl是php的扩展，有的主机为了安全会禁用curl.
 另外php本地调试的时候也是关闭curl的，所以会发生报错.
  */
 if(!function_exists('curl_init')){
