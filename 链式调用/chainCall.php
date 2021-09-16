@@ -6,15 +6,15 @@
 // $str->trim()->strlen()
 
 // 方式一
-/*class StringHelper 
+/*class StringHelper
 {
   private $value;
-   
+
   function __construct($value)
   {
     $this->value = $value;
   }
- 
+
   function __call($function, $args){
   	//var_export($function); // trim
   	//var_export($args); // array ( 0 => '0', )
@@ -22,7 +22,7 @@
     $this->value = call_user_func($function, $this->value, $args[0]); //这里参数是根据 要调用函数[闭包]的参数而定 trim('str', '0');
     return $this;
   }
- 
+
   function strlen() {
     return strlen($this->value);
   }
@@ -31,7 +31,7 @@
 $str = " sd f 0";
 $str = new StringHelper($str);
 // echo "<br>";
-// print  "<br>"; 
+// print  "<br>";
 // print("<br>");
 // print "\n";
 echo $str->trim('0')->strlen();  //处理字符串两遍0的字符*/
@@ -39,15 +39,15 @@ echo $str->trim('0')->strlen();  //处理字符串两遍0的字符*/
 
 
 //方式二
-// class StringHelper 
+// class StringHelper
 // {
 //   private $value;
-   
+
 //   function __construct($value)
 //   {
 //     $this->value = $value;
 //   }
- 
+
 //   function __call($function, $args){
 //   	// var_export($args); // array ( 0 => '0', )
 //     array_unshift($args, $this->value);
@@ -56,18 +56,18 @@ echo $str->trim('0')->strlen();  //处理字符串两遍0的字符*/
 //     $this->value = call_user_func_array($function, $args); //依然是按照回调函数的参数顺序而定的, 只不过第二个参数是数组形式
 //     return $this;
 //   }
- 
+
 //   function strlen() {
 //     return strlen($this->value);
 //   }
 // }
- 
+
 // $str = new StringHelper(" sd f 0");
 // echo $str->trim('0')->strlen();
 
 
 //方式三
-class StringHelper 
+class StringHelper
 {
 	private $value;
 
@@ -82,13 +82,18 @@ class StringHelper
 		return $this;
 	}
 
-	function strlen() {
-		return strlen($this->value);
+	public function strlen() {
+		$this->value = strlen($this->value);
+        return $this;
 	}
+
+    public function echo() {
+        var_dump($this->value);
+    }
 }
 
 //方式三 扩展为可以 不分顺序调用
-class StringHelper 
+class StringHelper1
 {
 	private $value;
 
@@ -115,10 +120,27 @@ class StringHelper
 		//exit;
 		return $this;
 	}
+
+    public function echo() {
+        var_dump($this->value);
+    }
 }
 
 $str = " sd f 0";
 $str = new StringHelper($str);
-echo $str->trim('0')->strlen();  //输出 6
-echo "<br>";
-echo $str->strlen()->trim('0'); // 输出 1
+// $str->trim('0')->strlen()->echo();  //输出 6
+// echo "<br>";
+// $str->strlen()->trim('0')->echo(); // 输出 1
+
+// 分开调用[无中间返回值]
+// $str->trim('0');
+// $str->strlen();
+// $str->echo(); // 输出 6
+
+// 分开调用[有中间返回值]
+$str = $str->strlen();
+$str->trim('0')->echo(); // 输出 1
+
+// 实践表明：
+// 是否需要有中间返回值，根具体的代码实现有关
+// 也就是说有可能需要，也有可能不需要
