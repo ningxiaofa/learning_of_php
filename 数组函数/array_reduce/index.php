@@ -1,5 +1,7 @@
 <?php
 
+// Document: https://www.php.net/manual/zh/function.array-reduce.php
+
 // $v1: current value
 // $v2: next value
 function myfunction($v1, $v2)
