@@ -1,0 +1,435 @@
+array(11) {
+  [0]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(26) "JUST FOR TEST I AM WILLIAM"
+    ["leader"]=>
+    string(16) "t19FBRttRXkBB5jw"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1634612308"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_tc5bl0mb7kaja4q91stsk3r55s"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/233-1634612154513-925981085.jpeg"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(26) "JUST FOR TEST I AM WILLIAM"
+    ["long_des"]=>
+    string(26) "JUST FOR TEST I AM WILLIAM"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(1) "9"
+    ["create"]=>
+    string(10) "1634612308"
+    ["bg_img"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/233-1634612160868-862385825.jpeg"
+    ["bid"]=>
+    string(16) "t19FBRttRXkBB5jw"
+  }
+  [1]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(21) "Activation GroupTest1"
+    ["leader"]=>
+    string(16) "68ZYywSDjtcxFw8m"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1633419911"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_i7i85q8bu93amvhr0lcomnh7mp"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/230-1633419846323-1262718058.png"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(13) "Testing group"
+    ["long_des"]=>
+    string(10) "Group Test"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(2) "35"
+    ["create"]=>
+    string(10) "1633419911"
+    ["bg_img"]=>
+    string(64) "https://dev-cdn.kumuapi.com/team/230-1633419851548-712289451.png"
+    ["bid"]=>
+    string(16) "68ZYywSDjtcxFw8m"
+  }
+  [2]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(17) "QA Public Group 2"
+    ["leader"]=>
+    string(16) "ASqnorYYoxwzzzec"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1631762584"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_u0geehchflnd3p65gu49ebq1f6"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631762572288-1206013655.jpg"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(7) "teasdas"
+    ["long_des"]=>
+    string(7) "asdadas"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(6) "123459"
+    ["create"]=>
+    string(10) "1631762584"
+    ["bg_img"]=>
+    string(64) "https://dev-cdn.kumuapi.com/team/153-1631762578600-683136548.png"
+    ["bid"]=>
+    string(16) "ASqnorYYoxwzzzec"
+  }
+  [3]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(7) "Cosplay"
+    ["leader"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1631618592"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_mipi4cioocf0lfque9s0to32fv"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631618575689-1398207405.png"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(28) "Cosplay, Anime, Manga Lovers"
+    ["long_des"]=>
+    string(149) "This is the official group for cosplayers of all shapes and sizes. All topics must be related to the group or atleast related to cosplay. That's all~"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(2) "14"
+    ["create"]=>
+    string(10) "1631618592"
+    ["bg_img"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631618581665-1666954644.png"
+    ["bid"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+  }
+  [4]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(17) "Financial Freedom"
+    ["leader"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1631618996"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_42fd34fq6mjj3l0e77anok5u3p"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631618963704-1700027657.png"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(54) "#Entrepreneurship #Financial#Investing #WealthCreation"
+    ["long_des"]=>
+    string(529) "This is a community where we encourage everyone to learn from each other.
+
+  Let's help every Filipino achieve Financial Freedom through Business and Financial Literacy.
+
+  I encourage discussions, questions, and conversations from anyone about:
+
+  - Financial Freedom
+  - Debt
+  - Investment
+  - Savings
+  - Stock Market
+  - Trading
+  - Real Estate
+  - Money Mindset
+  - Money Goals
+  - Business
+  - Career
+  - Income Streams
+  - Turning Passion Into Profit
+
+  Networking, mentoring, and socialization are all highly encouraged!"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(2) "16"
+    ["create"]=>
+    string(10) "1631618996"
+    ["bg_img"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631618968503-1555132120.png"
+    ["bid"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+  }
+  [5]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(13) "Coffee Lovers"
+    ["leader"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1631619391"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_d1ver2h3kmfeavkm1imcmu1gep"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631619343254-702834544.jpeg"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(50) "A digital space for coffee lovers around the world"
+    ["long_des"]=>
+    string(490) "We are a group for coffee lovers and people interested in English language exchange over coffee with English-speaking and non-English speaking people.
+
+  We'll explore the different cafes around the world so we will 'surf' the cafes, so to speak.
+
+  Our Community Vision
+
+  - To create high quality events for coffee and tea lovers to enjoy.
+  - To create a safe environment for people to meet.
+  - To facilitate international understanding and exchange among people from all walks of life."
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(2) "14"
+    ["create"]=>
+    string(10) "1631619391"
+    ["bg_img"]=>
+    string(64) "https://dev-cdn.kumuapi.com/team/153-1631619360210-825654452.png"
+    ["bid"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+  }
+  [6]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(8) "Kumusika"
+    ["leader"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1631619532"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_bcnvf9arlnmakd983nmr4tktpn"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631619491893-707967384.jpeg"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(113) "A place to enjoy your favorite indie, acoustic, jazz, hiphop, rock n' roll, classical, electronic, blues music <3"
+    ["long_des"]=>
+    string(421) "This is a group for music lovers who miss/love going to the best live music. We also have virtual tours tours and different events online and in person. We pride ourselves in choosing to host some of the best events in London and surrounding Counties for Festivals, Gigs and other great Music Events! We want to create solid relationships with like minded people.. so share your thoughts and enjoy these social occasions!"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(2) "19"
+    ["create"]=>
+    string(10) "1631619532"
+    ["bg_img"]=>
+    string(64) "https://dev-cdn.kumuapi.com/team/153-1631619496245-788852745.png"
+    ["bid"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+  }
+  [7]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(14) "Proud Pawrents"
+    ["leader"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1631619614"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_96ft91d0eo70c63vt5rkpi88ap"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631619604358-829091828.jpeg"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(44) "Sharing and discussions about our paw-babies"
+    ["long_des"]=>
+    string(476) "Welcome to the Proud Pawrents Club, where the health and well being of our pets is our priority. We are on a mission to change the way that pets and their parents are treated. We’ve discovered better ways we can provide our pets with good, wholesome and healthy options – with confidence- since there is so much that the public is unaware of when it comes to what food and treats are right for our pets. Let's unite as pet parents, educate the masses, and save our pets!!!"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(2) "17"
+    ["create"]=>
+    string(10) "1631619614"
+    ["bg_img"]=>
+    string(64) "https://dev-cdn.kumuapi.com/team/153-1631619609216-439491851.png"
+    ["bid"]=>
+    string(16) "SKN8pAAwzMGN6zbY"
+  }
+  [8]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(22) "WWWWWWWWWWWWWWWWWWWWWW"
+    ["leader"]=>
+    string(16) "ASqnorYYoxwzzzec"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1631706721"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_kt5kaskireersme3st3raf1j86"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631706830095-1414146475.png"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(6) "TEST 1"
+    ["long_des"]=>
+    string(6) "TEST 1"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(2) "38"
+    ["create"]=>
+    string(10) "1631706721"
+    ["bg_img"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/153-1631706840856-828626698.jpeg"
+    ["bid"]=>
+    string(16) "ASqnorYYoxwzzzec"
+  }
+  [9]=>
+  array(17) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(20) "Activation GroupTest"
+    ["leader"]=>
+    string(16) "68ZYywSDjtcxFw8m"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1633419273"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_7sbutn1bp6su0tjvrnsgjig7u6"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/230-1633419241702-1427521285.png"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(16) "Activation test1"
+    ["long_des"]=>
+    string(19) "Activation testing1"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(2) "11"
+    ["create"]=>
+    string(10) "1633419273"
+    ["bg_img"]=>
+    string(64) "https://dev-cdn.kumuapi.com/team/230-1633419247776-531027924.png"
+    ["bid"]=>
+    string(16) "68ZYywSDjtcxFw8m"
+  }
+  [10]=>
+  array(16) {
+    ["can_apply"]=>
+    string(1) "1"
+    ["kname"]=>
+    string(16) "Echoserang Group"
+    ["leader"]=>
+    string(16) "yfsTSqQDZ3tW3TNP"
+    ["year"]=>
+    string(4) "2021"
+    ["cssk"]=>
+    string(16) "normal1634031290"
+    ["show_stats"]=>
+    string(1) "1"
+    ["is_show_post"]=>
+    string(1) "1"
+    ["nid"]=>
+    string(30) "sig_15cubuohdcpkifk4rakav704cj"
+    ["avatar"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/258-1634031273034-1545231115.jpg"
+    ["is_show_mem"]=>
+    string(1) "1"
+    ["short_des"]=>
+    string(12) "Mga maritess"
+    ["kstatus"]=>
+    string(6) "normal"
+    ["members"]=>
+    string(1) "5"
+    ["create"]=>
+    string(10) "1634031290"
+    ["bg_img"]=>
+    string(65) "https://dev-cdn.kumuapi.com/team/258-1634031250581-1342574739.png"
+    ["bid"]=>
+    string(16) "yfsTSqQDZ3tW3TNP"
+  }
+}
