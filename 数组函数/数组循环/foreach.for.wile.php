@@ -13,6 +13,15 @@ foreach($data as $key => $value) {
 }
 var_dump($ret);
 
+$data = [
+    // TBD
+];
+foreach($data as $key => $value) {
+    // 如果$data为空，则下面的代码不会执行
+    // var_dump($key, $value);
+    // $ret[] = $key . $value;
+}
+
 // for
 // 只能用于索引数组
 $data = [

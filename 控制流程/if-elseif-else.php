@@ -8,3 +8,15 @@ if(in_array(1, $aa)){
 }else{
     echo 'none is in array';
 }
+
+// 有时候的的简写
+true && exit('123');
+// 相当于
+if(true){
+    exit('123');
+}
+
+null && exit('123');
+if(null){
+    exit('123');
+}
