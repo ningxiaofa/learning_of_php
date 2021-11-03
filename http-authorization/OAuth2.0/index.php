@@ -1,0 +1,26 @@
+<?php
+
+// Notion使用Google accout进行第三方登录
+// https://www.notion.so/oauth2callback?state=eyJjYWxsYmFja1R5cGUiOiJyZWRpcmVjdCIsImVuY3J5cHRlZFRva2VuIjoiOWI2MjkxOGQzZTU1MzEzZDBiOTMyNzgwYmRiZWVlMTIyOGU1NTc1Yzk3MTVkMDE5Y2ZiN2FjOWFhODlmMjVjNzBmMmRhNjM3MmQ2ZDI4ZDhjZDQxZjg3NGVkZTRiYTg2ZDFhZTQ5MzhiYjQ1ZWU4ZTY0YjMyZTRhYzI3MjYzNzdhNjlhMWE3ZTM4NGNhODk1MjA0ZDg4N2EwNzdjIn0%3D&code=4%2F0AX4XfWiwbgk-2AOMoLqb4hnctB7Y3D8dmkYx4_fv-mHYFQna5nZYu8eZoV3aTuQkw_3TxA&scope=email%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20openid&authuser=0&hd=kumu.ph&prompt=none
+
+// urldecode
+// https://www.notion.so/oauth2callback?state=eyJjYWxsYmFja1R5cGUiOiJyZWRpcmVjdCIsImVuY3J5cHRlZFRva2VuIjoiOWI2MjkxOGQzZTU1MzEzZDBiOTMyNzgwYmRiZWVlMTIyOGU1NTc1Yzk3MTVkMDE5Y2ZiN2FjOWFhODlmMjVjNzBmMmRhNjM3MmQ2ZDI4ZDhjZDQxZjg3NGVkZTRiYTg2ZDFhZTQ5MzhiYjQ1ZWU4ZTY0YjMyZTRhYzI3MjYzNzdhNjlhMWE3ZTM4NGNhODk1MjA0ZDg4N2EwNzdjIn0=&code=4/0AX4XfWiwbgk-2AOMoLqb4hnctB7Y3D8dmkYx4_fv-mHYFQna5nZYu8eZoV3aTuQkw_3TxA&scope=email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid&authuser=0&hd=kumu.ph&prompt=none
+
+// 从上面的uri中可以得到
+// state=eyJjYWxsYmFja1R5cGUiOiJyZWRpcmVjdCIsImVuY3J5cHRlZFRva2VuIjoiOWI2MjkxOGQzZTU1MzEzZDBiOTMyNzgwYmRiZWVlMTIyOGU1NTc1Yzk3MTVkMDE5Y2ZiN2FjOWFhODlmMjVjNzBmMmRhNjM3MmQ2ZDI4ZDhjZDQxZjg3NGVkZTRiYTg2ZDFhZTQ5MzhiYjQ1ZWU4ZTY0YjMyZTRhYzI3MjYzNzdhNjlhMWE3ZTM4NGNhODk1MjA0ZDg4N2EwNzdjIn0%3D
+
+// code=4%2F0AX4XfWiwbgk-2AOMoLqb4hnctB7Y3D8dmkYx4_fv-mHYFQna5nZYu8eZoV3aTuQkw_3TxA
+
+// scope=email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid
+
+// authuser=0
+
+// hd=kumu.ph
+
+// prompt=none
+
+$stateStr = 'eyJjYWxsYmFja1R5cGUiOiJyZWRpcmVjdCIsImVuY3J5cHRlZFRva2VuIjoiOWI2MjkxOGQzZTU1MzEzZDBiOTMyNzgwYmRiZWVlMTIyOGU1NTc1Yzk3MTVkMDE5Y2ZiN2FjOWFhODlmMjVjNzBmMmRhNjM3MmQ2ZDI4ZDhjZDQxZjg3NGVkZTRiYTg2ZDFhZTQ5MzhiYjQ1ZWU4ZTY0YjMyZTRhYzI3MjYzNzdhNjlhMWE3ZTM4NGNhODk1MjA0ZDg4N2EwNzdjIn0%3D';
+
+// 不对，需要确认补充
+$ret = base64_decode($stateStr, true);
+var_dump($ret); // false
