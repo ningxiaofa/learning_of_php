@@ -1,0 +1,66 @@
+{
+    "code": 200,
+    "message": "Success",
+    "data": {
+        "data": [
+            {
+                "nid": "sig_42fd34fq6mjj3l0e77anok5u3p",
+                "name": "Financial Freedom",
+                "avatar": "https://dev-cdn.kumuapi.com/team/153-1631618963704-1700027657.png",
+                "user_id": "SKN8pAAwzMGN6zbY",
+                "short_des": "#Entrepreneurship #Financial#Investing #WealthCreation",
+                "long_des": "This is a community where we encourage everyone to learn from each other.\n\nLet's help every Filipino achieve Financial Freedom through Business and Financial Literacy.\n\nI encourage discussions, questions, and conversations from anyone about:\n\n- Financial Freedom\n- Debt\n- Investment\n- Savings\n- Stock Market\n- Trading\n- Real Estate\n- Money Mindset\n- Money Goals\n- Business\n- Career\n- Income Streams\n- Turning Passion Into Profit\n\nNetworking, mentoring, and socialization are all highly encouraged!",
+                "number": 23,
+                "bg_img": "https://dev-cdn.kumuapi.com/team/153-1631618968503-1555132120.png",
+                "is_show_post": 1,
+                "is_show_mem": 1,
+                "notice": "",
+                "can_apply": 1,
+                "show_stats": 1,
+                "is_member": 1,
+                "is_live": 0
+            },
+            {
+                "nid": "sig_lrk35jmb88amoll7meojvctci4",
+                "name": "Public Group Test for Leader view",
+                "avatar": "https://dev-cdn.kumuapi.com/team/251-1639035114013-1643067400.png",
+                "user_id": "Yv86A3hmVjorCxjS",
+                "short_des": "test public group for official user field",
+                "long_des": "test public group for official user field",
+                "number": 9,
+                "bg_img": "https://dev-cdn.kumuapi.com/team/251-1639035105248-131735875.jpg",
+                "is_show_post": 1,
+                "is_show_mem": 1,
+                "notice": "",
+                "can_apply": 1,
+                "show_stats": 1,
+                "is_member": 1,
+                "is_live": 0
+            },
+            {
+                "nid": "sig_96ft91d0eo70c63vt5rkpi88ap",
+                "name": "Proud Pawrents",
+                "avatar": "https://dev-cdn.kumuapi.com/team/153-1631619604358-829091828.jpeg",
+                "user_id": "SKN8pAAwzMGN6zbY",
+                "short_des": "Sharing and discussions about our paw-babies",
+                "long_des": "Welcome to the Proud Pawrents Club, where the health and well being of our pets is our priority. We are on a mission to change the way that pets and their parents are treated. We’ve discovered better ways we can provide our pets with good, wholesome and healthy options – with confidence- since there is so much that the public is unaware of when it comes to what food and treats are right for our pets. Let's unite as pet parents, educate the masses, and save our pets!!!",
+                "number": 22,
+                "bg_img": "https://dev-cdn.kumuapi.com/team/153-1631619609216-439491851.png",
+                "is_show_post": 1,
+                "is_show_mem": 1,
+                "notice": "",
+                "can_apply": 1,
+                "show_stats": 1,
+                "is_member": 1,
+                "is_live": 0
+            }
+        ],
+        "lastEvaluatedKey": "eyIwIjo1Ny42MTAwMiwiMSI6IjE2MzE2MTk2MTQiLCJuZXh0X3NvdXJjZSI6ImpvaW5lZCJ9",
+        "sig_joined": {
+            "count": 7
+        },
+        "sig_joined_unblocked": {
+            "count": 6
+        }
+    }
+}
