@@ -2,7 +2,7 @@
 
 class ReturnClass
 {
-	//如何没有构造函数,则使用跟类名相同的方法,会被认为是构造函数[构造函数不能为静态方法
+	//如果没有构造函数,则使用跟类名相同的方法,会被认为是构造函数[构造函数不能为静态方法
 	//[这里不区分大小写, 因为是Windows系统缘故]的方法] 可以是受保护的.
 	public function __construct()
 	{
@@ -21,8 +21,26 @@ class ReturnClass
 }
 
 // $obj = new ReturnClass();
+// var_dump($obj);
+// 输出结果
+// __construct
+// object(ReturnClass)#1 (0) {
+// }
+// 实践可知：并不会执行returnClass方法
+
 $obj = ReturnClass::returnClass();
 var_dump($obj);
+// 输出
+// object(Closure)#1 (1) {
+//   ["parameter"]=>
+//   array(1) {
+//     ["$table"]=>
+//     string(10) "<required>"
+//   }
+// }
 var_dump($obj('123')); //可以继续调用
-exit;
-// var_export($obj);
+// 输出
+// array(1) {
+//   [0]=>
+//   string(3) "123"
+// }
