@@ -10,11 +10,10 @@ $NUM_OF_ATTEMPTS = 5;
 $attempts = 0;
 
 do {
-	try
-	{
+	try{
 		executeCode();
 	} catch (Exception $e) {
-	$attempts++;
+	    $attempts++;
 		sleep(1);
 		continue; //直接跳转到while()
 	}
