@@ -9,44 +9,7 @@ set_error_handler("exception_error_handler");
 $NUM_OF_ATTEMPTS = 5;
 $attempts = 0;
 
-do {
-	try
-	{
-		executeCode();
-	} catch (Exception $e) {
-	$attempts++;
-		sleep(1);
-		continue; //直接跳转到while()
-	}
-
-	break;
-
-} while($attempts < $NUM_OF_ATTEMPTS);
-
-function executeCode(){
-	echo "Hello world!";
-}
-
-// 方式二:
-
-/*function doSomething($params, $try = 1){
-    try{
-        //do something
-        return true;
-    }
-    catch(Exception $e){
-        if($try <5){
-             sleep(10);
-             //optionnaly log or send notice mail with $e and $try
-             doSomething($params, $try++);
-        }
-        else{ 
-             return false;
-        }
-    }
-}
-*/
-// 方式三
+// 方式三 -- 代码需要修改才能运行
 /*public static function setCache($tag, $key, $data, $minutes, $refreshable_flag = true, $timezone_flag = true, $cache_driver = null)
 {
     // Failed after retried, return to let API continue execution to prevent error
