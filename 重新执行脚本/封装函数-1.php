@@ -31,12 +31,12 @@ class CommonHelper
     {
         $func = $args[0] ?? null;
         if(is_null($func)){
-            exit("Args: {$func} does not exist, pls check \n\r");
+            exit("Error: Args[0]: The function called does not exist, pls check \n\r");
         }
 
         $agrsCount = count($args);
         if($agrsCount > 6){
-            exit("Sorry for supporting the called function five params temp  \n\r");
+            exit("Error: Currently only supported the called function that up to 5 args \n\r");
         }
 
         switch ($agrsCount) {
