@@ -30,15 +30,13 @@ class CommonHelper
     protected static function execFunc($args)
     {
         $func = $args[0] ?? null;
-        if (is_null($func)) {
-            self::outputAndLog("Args: {$func} does not exist, pls check");
-            exit;
+        if(is_null($func)){
+            exit("Args: {$func} does not exist, pls check \n\r");
         }
 
         $agrsCount = count($args);
-        if ($agrsCount > 6) {
-            self::outputAndLog('Sorry for supporting the called function five params temp');
-            exit;
+        if($agrsCount > 6){
+            exit("Sorry for supporting the called function five params temp  \n\r");
         }
 
         switch ($agrsCount) {
