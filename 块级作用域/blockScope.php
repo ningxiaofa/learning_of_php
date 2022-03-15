@@ -17,6 +17,6 @@ function foo(){
   for ($i = 0; $i < 7; $i++) {
 	  //TBD
   }
-  echo $i; 
+  echo $i; // 7
 }
 foo();
