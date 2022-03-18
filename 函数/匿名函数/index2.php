@@ -7,24 +7,36 @@
 // 可以在函数内部创建并可以作为返回值从函数返回 ===> 3
 
 // Exec main
-(function (){
-    // 特征二 -- 支持
-    run("varFunc");
+// 特征1: 支持
+$func = function ($name){
+    echo $name . PHP_EOL;
+};
+$func("特征1 - 函数字面量");
 
-    // 特征三 -- 支持 -- 但只是支持具名函数形式
+(function (){
+    // 特征2
+    // 具名函数
+    run("varFunc");
+    // 匿名函数
+    run(
+        function (){
+            echo "特征2 - 匿名函数" . PHP_EOL;
+        }
+    );
+
+    // 特征三
     function subFunc(){
-        echo "subFunc" . PHP_EOL;
-        return "subFunc";
+        echo "特征3 - 子函数调用" . PHP_EOL;
+        return function (){
+            echo "特征3 - 子函数返回值 - 函数调用" . PHP_EOL;
+        };
     }
 
-    subFunc();
+    $finalFunc = subFunc();
+    // 返回值函数调用
+    $finalFunc();
 }
 )();
-
-// 特征一: 不支持【语言报错！】
-// $func = function ($name){
-//     echo $name;
-// }
 
 // 特征二 -- 支持
 function run($func){
@@ -32,13 +44,15 @@ function run($func){
 }
 
 function varFunc(){
-    echo "varFunc" . PHP_EOL;;
-    return "varFunc";
+    echo "特征2 - 具名函数" . PHP_EOL;;
 }
 
+// 输出结果
+// ➜  learning_of_php git:(master) ✗ php 函数/匿名函数/index2.php
+// 特征1 - 函数字面量
+// 特征2 - 具名函数
+// 特征2 - 匿名函数
+// 特征3 - 子函数调用
+// 特征3 - 子函数返回值 - 函数调用
 
-
-
-
-
-
+// 结论：PHP也是函数为一等公民
