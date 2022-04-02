@@ -7,6 +7,7 @@ if(empty($sig['is_blocked'])){
 }else{
     echo 'nop, empty() can not be instead of isset()' . PHP_EOL;
 }
+exit('sdf');
 
 // 语法
 // bool empty ( mixed $var )
