@@ -3,11 +3,14 @@
 // 使用composer自动加载器
 require 'vendor/autoload.php';
 
+use GuzzleHttp\Client;
+use League\Csv\Reader;
+
 // 实例Guzzle Http客户端
-$client = new GuzzleHttp\Client();
+$client = new Client();
 
 // 打开并迭代处理CSV
-$csv = League\Csv\Reader::createFromPath($argv[1]);
+$csv = Reader::createFromPath($argv[1]);
 foreach ($csv as $row) {
     try {
         // 发送HTTP GET请求
@@ -16,7 +19,7 @@ foreach ($csv as $row) {
         if ($httpResponse->getStatusCode() >= 400) {
             throw new Exception();
         }
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         // 把死链发给标准输出
         echo $row[0] . PHP_EOL;
     }
