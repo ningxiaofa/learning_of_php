@@ -4,6 +4,11 @@
 // 方式一 使用use
 // 其实就是传递额外的变量
 $extra = 'ning';
+$ret = [
+    'hello',
+    'world',
+    'william'
+];
 $newRet3 = array_map(function($ele) use ($extra) {
     return $ele . '...' . $extra;
 }, $ret);
