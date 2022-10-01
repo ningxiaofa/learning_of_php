@@ -103,7 +103,7 @@ class Route
         foreach ($this->routes as $route => $callback) {
             if ($currentPath == $route) {
                 $callback();
-                break;
+                break; // 优先匹配原则
             }
         }
 
@@ -180,7 +180,7 @@ class Route
     }
 }
 
-// 实例化路有组件
+// 实例化路由组件
 $routeIns = new Route();
 
 // 定义App的路由列表
