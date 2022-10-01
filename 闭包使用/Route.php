@@ -3,7 +3,7 @@
 // 经常用于框架之中，Laravel应是如此实现路由功能
 // 关于闭包的bindTo的用法详情，可以参考<<现代PHP模式>>第32页
 
-class App {
+class Route {
     protected $routes = [];
     protected $responseStatus = '200 OK';
     protected $responseContentType = 'text/html';
@@ -21,7 +21,7 @@ class App {
         //     ["/users/william"]=>
         //     object(Closure)#3 (1) {
         //       ["this"]=>
-        //       object(App)#1 (4) {
+        //       object(Route)#1 (4) {
         //         ["routes":protected]=>
         //         *RECURSION*
         //         ["responseStatus":protected]=>
@@ -43,7 +43,7 @@ class App {
         //     ["/users/william"]=>
         //     object(Closure)#3 (1) {
         //       ["this"]=>
-        //       object(App)#1 (4) {
+        //       object(Route)#1 (4) {
         //         ["routes":protected]=>
         //         *RECURSION*
         //         ["responseStatus":protected]=>
@@ -64,7 +64,7 @@ class App {
     }
 }
 
-$app = new App();
+$app = new Route();
 $requestRoute = '/users/william';
 $app->addRoute($requestRoute, function(){
     $this->responseContentType = 'application/json;charset=utf8';
@@ -74,5 +74,5 @@ $app->dispatch($requestRoute);
 // {"name": "william ning"}
 
 // 浏览器中访问
-// http://localhost/App.php
+// http://localhost/Route.php
 // 如期响应
