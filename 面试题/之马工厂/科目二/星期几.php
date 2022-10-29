@@ -11,10 +11,11 @@ function get_week($date)
 {
     //强制转换日期格式
     $date_str = date('Y-m-d', strtotime($date));
+    var_dump(strtotime($date));
     //封装成数组
     $arr = explode("-", $date_str);
+    
     //参数赋值
-
     //年
     $year = $arr[0];
     //月，输出2位整型，不够2位右对齐
@@ -28,11 +29,23 @@ function get_week($date)
     //获取数字型星期几
     $number_wk = date("w", $strap);
     //自定义星期数组
-    $weekArr = array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+    $weekArr = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
     //获取数字对应的星期
     return $weekArr[$number_wk];
 }
-//测试
+// 测试
 $date = "2017-03-21";
-echo get_week($date);
-//星期六
+echo get_week($date) . PHP_EOL;
+// 星期二
+
+// -------------------------------------------------------------
+// 简化后的函数
+function getWeek($datetime)
+{
+    $number = date('w', strtotime($datetime));
+    $weeks = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+    return $weeks[$number];
+}
+
+print getWeek('2017-3-21') . PHP_EOL;
+print getWeek('2017-03-21') . PHP_EOL;
