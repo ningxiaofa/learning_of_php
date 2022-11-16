@@ -1,0 +1,19 @@
+➜  learning_of_php git:(master) ✗ ipcs -m
+IPC status from <running system> as of Wed Nov 16 14:37:27 CST 2022
+T     ID     KEY        MODE       OWNER    GROUP
+Shared Memory:
+m  65537 0x7410da73 --rw-rw-rw- huangbaoyin    staff
+
+➜  learning_of_php git:(master) ✗ ipcrm -M 0x7410da73
+➜  learning_of_php git:(master) ✗ ipcs -m            
+IPC status from <running system> as of Wed Nov 16 14:38:15 CST 2022
+T     ID     KEY        MODE       OWNER    GROUP
+Shared Memory:
+
+➜  learning_of_php git:(master) ✗ ipcs -m
+IPC status from <running system> as of Wed Nov 16 14:40:17 CST 2022
+T     ID     KEY        MODE       OWNER    GROUP
+Shared Memory:
+m 131073 0x7310c7e0 --rw-r--r-- huangbaoyin    staff
+
+➜  learning_of_php git:(master) ✗ 
