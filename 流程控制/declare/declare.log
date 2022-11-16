@@ -1,0 +1,18 @@
+
+https://www.php.net/manual/zh/control-structures.declare.php
+
+declare ¶
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+declare 结构用来设定一段代码的执行指令。declare 的语法和其它流程控制结构相似：
+
+declare (directive)
+    statement
+directive 部分允许设定 declare 代码段的行为。目前只认识三个指令：ticks（更多信息见下面 ticks 指令）、 encoding（更多信息见下面 encoding 指令）、 strict_types 指令 (更多信息见类型声明页面 严格类型 章节)。
+本指令是在文件编译时处理的，所以指令只接受字面量的值。 无法使用变量和常量。
+
+
+参见 
+./ticks.php
+./encoding.php
+./strict_types.php
