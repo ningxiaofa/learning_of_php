@@ -1,0 +1,70 @@
+这些扩展库已经包含在PHP中但是需要编译它们才能使用，并且可能需要额外的扩展库。
+
+Bzip2
+
+cURL
+
+DOM
+
+Enchant
+
+Gettext
+
+GMP
+
+IMAP
+
+LDAP
+
+libxml
+
+MySQLi
+
+Mysqlnd
+
+OCI8
+
+OpenSSL
+
+MS SQL Server (PDO)
+
+Firebird (PDO)
+
+MySQL (PDO)
+
+Oracle (PDO)
+
+ODBC and DB2 (PDO)
+
+PostgreSQL (PDO)
+
+SQLite (PDO)
+
+PostgreSQL
+
+Pspell
+
+Readline
+
+SimpleXML
+
+SNMP
+
+SOAP
+
+Sodium
+
+Tidy
+
+ODBC
+
+XML 解析器
+
+XMLReader
+
+XMLWriter
+
+XSL
+
+Zip
+

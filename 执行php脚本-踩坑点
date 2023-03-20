@@ -1,0 +1,19 @@
+1. 在项目根目录下，执行脚本，出现报错：
+➜  learning_of_php git:(master) ✗ php 扩展/1/messagepack/encode_binary_string_1.php
+PHP Warning:  file_get_contents(test.png): Failed to open stream: No such file or directory in /Users/mac/Documents/code/php/learning_of_php/扩展/1/messagepack/encode_binary_string_1.php on line 3
+PHP Stack trace:
+PHP   1. {main}() /Users/mac/Documents/code/php/learning_of_php/扩展/1/messagepack/encode_binary_string_1.php:0
+PHP   2. file_get_contents($filename = 'test.png') /Users/mac/Documents/code/php/learning_of_php/扩展/1/messagepack/encode_binary_string_1.php:3
+
+Warning: file_get_contents(test.png): Failed to open stream: No such file or directory in /Users/mac/Documents/code/php/learning_of_php/扩展/1/messagepack/encode_binary_string_1.php on line 3
+
+Call Stack:
+    0.0006     397976   1. {main}() /Users/mac/Documents/code/php/learning_of_php/扩展/1/messagepack/encode_binary_string_1.php:0
+    0.0008     398352   2. file_get_contents($filename = 'test.png') /Users/mac/Documents/code/php/learning_of_php/扩展/1/messagepack/encode_binary_string_1.php:3
+
+
+提示： 文件或者目录不存在，还是因为路径的问题【当路径中存在中文时】
+    解决办法:
+    方法1. 修改中文路径为英文路径
+    方法2. 先进入到脚本所在的父目录下，然后再使用相对路径执行脚本
+    

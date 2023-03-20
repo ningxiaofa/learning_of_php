@@ -1,0 +1,2 @@
+PHP 手册 附录 扩展库列表／归类
+https://www.php.net/manual/zh/extensions.membership.php
