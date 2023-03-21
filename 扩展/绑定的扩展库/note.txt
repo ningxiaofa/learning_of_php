@@ -34,7 +34,7 @@ intl
 
 Mhash
 
-PCNTL
+PCNTL -- learned
 
 PDO
 
