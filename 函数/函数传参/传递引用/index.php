@@ -29,26 +29,25 @@ function changeQuoteValue(&$resultData){
     // 上面没有传递引用, 下面是有的，只要记住，涉及到新的变量就不行了
 
     foreach($resultData['first']['second'] as $key => &$value){
-        $value['extra'] = $key . 'hi';
+        $value['extra'] = $key . ' hi';
     }
 }
 
 changeQuoteValue($mockData);
-var_dump($mockData);
-// array(1) {
-//     ["first"]=>
-//     array(1) {
-//       ["second"]=>
-//       array(1) {
-//         ["third"]=>
-//         &array(3) {
-//           ["hello"]=>
-//           string(5) "world"
-//           ["william"]=>
-//           string(4) "ning"
-//           ["extra"]=>
-//           string(7) "thirdhi"
-//         }
-//       }
-//     }
-//   }
+// var_dump($mockData);
+var_export($mockData);
+// array (
+//     'first' => 
+//     array (
+//       'second' => 
+//       array (
+//         'third' => 
+//         array (
+//           'hello' => 'world',
+//           'william' => 'ning',
+//           'extra' => 'third hi',
+//         ),
+//       ),
+//     ),
+//   )
+
