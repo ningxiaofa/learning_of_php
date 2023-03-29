@@ -5,7 +5,7 @@
 // 我们可以通过在脚本中使用memory_get_usage()函数来证明这一点，该函数返回当前PHP进程使用的内存量（以字节为单位）。
 function modify_array($arr) { // 当为引用类型时 &$arr 内存使用量差异有时为-32 有时为32bytes 有指针内存占用，以及新元素修改/添加占用，而且分配内存不是一个一个字节分配，而是分配一块内存.
     // 在函数内部修改数组
-    $arr[] = 'new item';
+    $arr[] = 'new item'; // 存在写实拷贝
     // $arr1  = range(1, 1000); //Difference: 64 bytes%   
     // $arr = array_merge($arr, $arr1);
     // var_dump(count($arr));
