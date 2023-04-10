@@ -84,7 +84,7 @@ MS SQL Server (PDO)
 
 PS
 
-pthreads
+pthreads -- learned
 
 Quickhash
 
