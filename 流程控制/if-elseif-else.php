@@ -9,6 +9,10 @@ if(in_array(1, $aa)){
     echo 'none is in array';
 }
 
+// ➜  learning_of_php git:(master) php 流程控制/if-elseif-else.php
+// 1 is in array
+// ➜  learning_of_php git:(master) ✗ 
+
 // 有时候的的简写
 true && exit('123');
 // 相当于
