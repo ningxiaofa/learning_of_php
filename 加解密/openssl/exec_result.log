@@ -1,0 +1,4 @@
+➜  learning_of_php git:(master) ✗ php 加解密/openssl/index.php
+加密后的数据：rEBYkl8r/gZgvWtthBzxIEMWGsRkociXVymy0C4cX5s=
+解密后的数据：Hello, world!
+➜  learning_of_php git:(master) ✗ 
